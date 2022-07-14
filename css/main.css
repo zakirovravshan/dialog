@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v30-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Robot", Arial, sans-serif;
+    padding: 100px;
+    background-color: #E6EDF6;
+}
+
+.container {
+
+    width: 400px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 512px;
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 109px;
+    padding: 20px;
+    background: #6A96D8;
+    border-radius: 14px 14px 0px 0px;
+}
+
+
+
+.name {
+    margin-left: 20px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+    font-variant: small-caps;
+
+    color: #FFFFFF;
+}
+
+.name::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 24px;
+    top: 27px;
+    background: #FFFFFF;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.chat {
+    position: relative;
+    padding: 24px 24px 20px 24px;
+    
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: #fff;
+}
+
+.day {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    font-variant: small-caps;
+
+    color: #DDDDDD;
+    margin-bottom: 44px;
+}
+
+.day::before {
+    top: 10px;
+    left: 50px;
+    width: 145px;
+    height: 0;
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url("../image/Line\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: calc(50%);
+}
+
+.smsbox {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.smsbox:nth-child(even):before {
+    top: 20px;
+    left: -13px;
+
+    position: absolute;
+    border-top: 15px solid #E6EDF6;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    content: "";
+}
+
+.smsbox:nth-child(odd) {
+    margin-left: 90px;
+
+
+}
+
+.smsbox:nth-child(odd)::before {
+    top: 20px;
+    right: -13px;
+
+    position: absolute;
+    border-top: 15px solid #E6EDF6;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    content: "";
+
+}
+
+.time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+
+    color: #DDDDDD;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.time2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    margin-left: 190px;
+    color: #DDDDDD;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.sms {
+    width: 100%;
+    max-width: 275px;
+    padding: 9px;
+    background-color: #E6EDF6;
+
+}
+
+.sms3 {
+    width: 100%;
+    max-width: 89px;
+    padding: 9px;
+    background-color: #E6EDF6;
+}
+
+.sms__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    letter-spacing: -0.03em;
+
+    color: #000000;
+}
+
+.notification {
+    margin-top: ;
+    padding: 9px 9px;
+    border: 1px solid transparent;
+
+    background: #FFC2C1;
+    border-radius: 1px;
+    width: 100%;
+    max-width: 204px;
+    margin-left: 110px;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    max-width: 352px;
+    border: 1px solid #DDDDDD;
+    border-radius: 54px;
+}
+
+.input{
+    margin-left: 10px;
+    outline:none;
+    border: transparent;
+}
+
+.button {
+    border: transparent;
+    padding: 9px 26px;
+    background: #6A96D8;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+    font-variant: small-caps;
+
+    color: #FFFFFF;
+}
